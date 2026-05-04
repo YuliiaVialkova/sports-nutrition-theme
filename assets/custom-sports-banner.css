@@ -3,3 +3,9 @@
 .sports-banner__text--subtitle p{
 margin: 0;
 }
+
+@media screen and (max-width: 749px){
+  .sports-banner__text--body {
+    display: none;
+  }
+}
