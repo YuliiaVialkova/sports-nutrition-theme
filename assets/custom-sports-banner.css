@@ -11,4 +11,7 @@ margin: 0;
   .sports-banner__buttons{
     width: 100%;
   }
+  .sports-banner__buttons .button{
+    flex: 1;
+  }
 }
