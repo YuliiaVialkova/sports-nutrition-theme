@@ -135,7 +135,7 @@ Based on the original file: image-banner.liquid (Dawn v15.4.1)
           {%- when 'text' -%}
             {% assign text_index = text_index | plus: 1 %}
             <div class="banner__text rte {{ block.settings.text_style }} sports-banner__text{% if text_index == 1 %} sports-banner__text--subtitle {% else %} sports-banner__text--body{% endif %}" {{ block.shopify_attributes }}>
-              <p>{{ block.settings.text }}</p>
+              {{ block.settings.text }}
             </div>
           {%- when 'buttons' -%}
             <div
