@@ -8,4 +8,7 @@ margin: 0;
   .sports-banner__text--body {
     display: none;
   }
+  .sports-banner__buttons{
+    width: 100%;
+  }
 }

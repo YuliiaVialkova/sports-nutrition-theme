@@ -139,7 +139,7 @@ Based on the original file: image-banner.liquid (Dawn v15.4.1)
             </div>
           {%- when 'buttons' -%}
             <div
-              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %} sports-banner__buttons"
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
