@@ -83,7 +83,7 @@
           "type": "heading",
           "settings": {
             "heading": "<p>LAB-GRADE FORMULATIONS</p>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_8gyVnC": {
@@ -108,7 +108,7 @@
             "button_style_secondary_1": false,
             "button_label_2": "THE SCIENCE",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": true
           }
         }
       },
