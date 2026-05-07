@@ -3,6 +3,7 @@ Custom sports nutrition section.
 Based on the original file: image-banner.liquid (Dawn v15.4.1)
 {% endcomment %}
 
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'custom-sports-banner.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
