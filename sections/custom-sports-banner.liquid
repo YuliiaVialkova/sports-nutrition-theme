@@ -15,13 +15,7 @@ Based on the original file: image-banner.liquid (Dawn v15.4.1)
         padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
-      };
-      #Banner-{{ section.id }} .banner__buttons .button{
-        white-space: nowrap;
-        padding-left: 2rem;
-        padding-right: 2rem;
       }
-
     }
 
     @media screen and (min-width: 750px) {
@@ -38,6 +32,13 @@ Based on the original file: image-banner.liquid (Dawn v15.4.1)
 {%- style -%}
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+  @media screen and (max-width: 749px) {
+    #Banner-{{ section.id }} .banner__buttons .button {
+      white-space: nowrap;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 {%- endstyle -%}
 
