@@ -1,0 +1,7 @@
+/* --- МОЇ КАСТОМНІ ГЛОБАЛЬНІ СТИЛІ --- */
+.button,
+.shopify-challenge__button,
+.customer button,
+.shopify-payment-button__button--unbranded {
+  text-transform: uppercase;
+}
