@@ -93,9 +93,37 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "custom_marquee_xA3VAE": {
+      "type": "custom-marquee",
+      "blocks": {
+        "marquee_text_GbH9B8": {
+          "type": "marquee_text",
+          "settings": {
+            "text": "FREE SHIPPING OVER $100"
+          }
+        },
+        "marquee_text_izmi3J": {
+          "type": "marquee_text",
+          "settings": {
+            "text": "20% OFF STACKS"
+          }
+        }
+      },
+      "block_order": [
+        "marquee_text_GbH9B8",
+        "marquee_text_izmi3J"
+      ],
+      "name": "Custom Marquee",
+      "settings": {
+        "bg_color": "#ff5625",
+        "text_color": "#541100",
+        "speed": 20
+      }
     }
   },
   "order": [
+    "custom_marquee_xA3VAE",
     "custom_sports_banner_9PA9qj",
     "featured_collection"
   ]
