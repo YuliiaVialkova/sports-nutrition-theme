@@ -1,4 +1,4 @@
-{{ custom-marquee.css | asset_url | stylesheet_tag}}
+{{ 'custom-marquee.css' | asset_url | stylesheet_tag }}
 
 
 <div class="custom-marquee" style="--marquee-bg: {{ section.settings.bg_color }}; --marquee-text: {{ section.settings.text_color }}; --marquee-speed: {{ section.settings.speed }}s">
