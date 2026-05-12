@@ -6,3 +6,28 @@
     background-color: var(--marquee-bg);
     color: var(--marquee-text);
 }
+.custom-marquee__track {
+    display: flex;
+    width: max-content;
+    animation: marqueeScroll var(--marquee-speed) linear infinite;
+}
+.custom-marquee__content {
+    display: flex;
+    white-space: nowrap;
+}
+.custom-marquee__text {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 0 0.4rem;
+}
+
+@keyframes marqueeScroll{
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
