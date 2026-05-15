@@ -5,3 +5,8 @@
 .shopify-payment-button__button--unbranded {
   text-transform: uppercase;
 }
+
+button.button.button--secondary.quick-add__submit,
+button.button.button--secondary.quick-add__submit::after {
+  --buttons-border-width: 1px;
+}
