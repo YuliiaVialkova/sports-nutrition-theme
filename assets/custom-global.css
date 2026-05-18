@@ -10,3 +10,11 @@ button.button.button--secondary.quick-add__submit,
 button.button.button--secondary.quick-add__submit::after {
   --buttons-border-width: 1px;
 }
+
+/*Flexbox for the custom section*/
+.custom-flex-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap:2rem
+}
