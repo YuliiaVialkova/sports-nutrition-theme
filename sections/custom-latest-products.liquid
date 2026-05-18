@@ -103,10 +103,11 @@ Based on the original file: featured-collection.liquid (Dawn v15.4.1)
       <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <a
           href="{{ section.settings.collection.url }}"
-          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
-          aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
+          class="custom-view-all-link {% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+          aria-label="{{ 'section.settings.view_all_text' | escape }}"
         >
-          {{ 'sections.featured_collection.view_all' | t }} {% render 'icon-custom-arrow' %}
+          {{ section.settings.view_all_text }} 
+          {% render 'icon-custom-arrow' %}
         </a>
       </div>
     {%- endif -%}
@@ -347,6 +348,12 @@ Based on the original file: featured-collection.liquid (Dawn v15.4.1)
       "default": true,
       "label": "t:sections.featured-collection.settings.show_view_all.label",
       "info": "t:sections.featured-collection.settings.show_view_all.info"
+    },
+    {
+      "type": "text",
+      "id": "view_all_text",
+      "label": "Text for 'View all' link",
+      "default": "View all releases"
     },
     {
       "type": "select",
