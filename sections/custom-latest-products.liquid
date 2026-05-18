@@ -106,7 +106,7 @@ Based on the original file: featured-collection.liquid (Dawn v15.4.1)
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
         >
-          {{ 'sections.featured_collection.view_all' | t }}
+          {{ 'sections.featured_collection.view_all' | t }} {% render 'icon-custom-arrow' %}
         </a>
       </div>
     {%- endif -%}
