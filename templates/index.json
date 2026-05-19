@@ -64,7 +64,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "SHOP NOW",
-            "button_link_1": "",
+            "button_link_1": "shopify://pages/shop",
             "button_style_secondary_1": false,
             "button_label_2": "THE SCIENCE",
             "button_link_2": "",
@@ -108,6 +108,7 @@
         "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
+        "view_all_text": "View all releases",
         "view_all_style": "link",
         "color_scheme": "scheme-4",
         "image_ratio": "adapt",
