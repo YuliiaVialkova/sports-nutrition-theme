@@ -11,7 +11,7 @@ button.button.button--secondary.quick-add__submit::after {
   --buttons-border-width: 1px;
 }
 
-/*Flexbox for the custom section*/
+/*Flexbox for the custom card product section*/
 .custom-flex-header{
 display: flex;
 justify-content: space-between;
@@ -37,4 +37,36 @@ gap:2rem
 
 .custom-view-all-link:hover svg {
   transform: translateX(4px);
+}
+
+/* custom collection bades for products in section latest products */
+.custom-collection-badge{
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+  z-index: 2;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  color: #fff;
+}
+/* individual color for every collection */
+.badge--protein { 
+  background-color: #C3F400; 
+  color: #161E00;
+}
+.badge--creatine { 
+  background-color: #3F3F46;
+}
+.badge--pre-workout { 
+  background-color: #FF5625; 
+  color: #541100; 
+}
+.badge--vitamins { 
+  background-color: #3F3F46;
+}
+.badge--equipment { 
+  background-color: #FF5625; 
+  color: #541100; 
 }

@@ -54,9 +54,28 @@
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
       <div
-        class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
+        class="card__inner 
+        {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
+         
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
+        {%- if show_collection_badge and card_product.collections.size > 0 -%}
+  {%- assign real_collection = blank -%}
+  
+  {%- for collection in card_product.collections -%}
+    {%- comment -%} Ignore technical collections by their handle {%- endcomment -%}
+    {%- if collection.handle != 'custom-latest-products' and collection.handle != 'frontpage' -%}
+      {%- assign real_collection = collection -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if real_collection != blank -%}
+    <div class="custom-collection-badge badge--{{ real_collection.handle }}">
+      {{ real_collection.title }}
+    </div>
+  {%- endif -%}
+{%- endif -%}
         {%- if card_product.featured_media -%}
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
             <div class="media media--transparent media--hover-effect">
