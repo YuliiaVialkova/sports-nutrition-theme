@@ -70,3 +70,29 @@ gap:2rem
   background-color: #FF5625; 
   color: #541100; 
 }
+
+/* global h1 headings styles for all pages except home page */
+body:not(.template-index) main .title,
+body:not(.template-index) main .main-page-title,
+body:not(.template-index) main h1.page-title,
+body:not(.template-index) main .cart__title {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+/* Reset margin after headings */
+body:not(.template-index) main .title:only-child,
+body:not(.template-index) main .main-page-title:only-child,
+body:not(.template-index) main h1.page-title:only-child,
+body:not(.template-index) main .cart__title:only-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 749px) {
+  body:not(.template-index) main .title,
+  body:not(.template-index) main .main-page-title,
+  body:not(.template-index) main h1.page-title,
+  body:not(.template-index) main .cart__title {
+    font-size: 2.5rem;
+  }
+}
