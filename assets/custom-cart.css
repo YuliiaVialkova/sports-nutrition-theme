@@ -1,0 +1,31 @@
+/*Responsive two-column layout for the shopping cart page*/
+
+@media screen and (min-width:988px) {
+    #MainContent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: var(--page-width, 1200px);
+    }
+
+    #MainContent > .shopify-section:first-child{
+        flex: 1 1 60%;
+        width: 60%
+    }
+    #MainContent > .shopify-section:nth-child(2){
+        flex: 1 1 35%;
+        width: 35%
+    }
+     #MainContent > .shopify-section:nth-child(n+3){
+        flex: 1 1 100%;
+        width: 100%
+    }
+    body #MainContent #main-cart-items.page-width, 
+  body #MainContent #main-cart-footer.page-width,
+  body #MainContent .shopify-section > .page-width {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
